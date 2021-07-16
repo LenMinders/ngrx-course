@@ -18,6 +18,8 @@ export class CourseComponent implements OnInit {
 
   lessons$: Observable<Lesson[]>;
 
+  loading$: null;
+
   displayedColumns = ['seqNo', 'description', 'duration'];
 
   nextPage = 0;
