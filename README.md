@@ -1,3 +1,14 @@
+This is my branch for coding along with [this NgRx course on undemy](https://www.udemy.com/course/ngrx-course/)
+
+## Branches I Used
+- 1-start : for the beginning of the course
+- 1-auth-finished : when I reached the point where that was finished to make sure i have a clean version to work with
+- my-ngrx-data-implementation : when I finished implementing the entity part of the course, I branched from a clean old commit of 1-auth-finished, so i could have a clean slate to implement the same changes using NgRx data instead of NgRx entity
+
+
+# Original README below
+
+-------------------
 
 ## Ngrx (with NgRx Data) - The Complete Guide
 
