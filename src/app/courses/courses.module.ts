@@ -51,7 +51,10 @@ export const coursesRoutes: Routes = [
 ];
 
 const entityMetadata: EntityMetadataMap = {
-  Course: {sortComparer: compareCourses},
+  Course: {
+    sortComparer: compareCourses,
+    entityDispatcherOptions: { optimisticUpdate: true },
+  },
 };
 
 @NgModule({
@@ -101,6 +104,6 @@ export class CoursesModule {
     private coursesDataService: CoursesDataService
   ) {
     eds.registerMetadataMap(entityMetadata);
-    entityDataService.registerService('Course', coursesDataService);
+    entityDataService.registerService("Course", coursesDataService);
   }
 }
